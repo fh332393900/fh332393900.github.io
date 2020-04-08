@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://fh332393900.github.io/gh-pages
-root: /gh-pages/
+url: https://fh332393900.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -100,4 +100,4 @@ theme: melody
 deploy:
   type: git
   repository: http://github.com/fh332393900/fh332393900.github.io.git
-  branch: gh-pages
+  branch: master
