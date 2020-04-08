@@ -7,7 +7,7 @@ branches:
   only:
     - hexoPrj # build master branch only
 script:
-  - hexo deploy # generate static files
+  - hexo deploy --generate # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
