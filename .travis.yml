@@ -8,8 +8,6 @@ branches:
     - hexoPrj # build master branch only
 script:
   - hexo clean
-  - hexo g
-  - hexo algolia
   - hexo deploy # generate static files
 deploy:
   provider: pages

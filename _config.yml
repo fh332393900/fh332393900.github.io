@@ -99,5 +99,5 @@ theme: melody
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: http://github.com/fh332393900/fh332393900.github.io
+  repo: git@github.com:fh332393900/fh332393900.github.io.git
   branch: master
