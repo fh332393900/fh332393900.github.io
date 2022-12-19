@@ -67,6 +67,19 @@ const config = {
         breadcrumbs: false,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "vue",
+        path: "web/vue",
+        routeBasePath: "vue",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
   ],
 
   themeConfig:
@@ -83,13 +96,16 @@ const config = {
             position: 'left',
             label: '知识',
             items: [{
-              label: '前端',
+              label: 'Git',
               to: '/git'
+            }, {
+              label: 'Vue',
+              to: '/vue'
             }]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/fh332393900/fh332393900.github.io',
             label: 'GitHub',
             position: 'right',
           },
