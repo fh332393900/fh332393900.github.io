@@ -16,9 +16,9 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'fh332393900', // Usually your GitHub org/user name.
+  projectName: 'fh332393900.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -53,6 +53,22 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "git",
+        path: "web/git",
+        routeBasePath: "git",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -64,10 +80,12 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: '知识',
+            items: [{
+              label: '前端',
+              to: '/git'
+            }]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
