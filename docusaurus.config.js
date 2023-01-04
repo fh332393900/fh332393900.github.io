@@ -80,6 +80,19 @@ const config = {
         breadcrumbs: false,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "Jenkins",
+        path: "web/Jenkins",
+        routeBasePath: "Jenkins",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
   ],
 
   themeConfig:
@@ -101,6 +114,9 @@ const config = {
             }, {
               label: 'Vue',
               to: '/vue'
+            }, {
+              label: 'Jenkins',
+              to: '/Jenkins'
             }]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
