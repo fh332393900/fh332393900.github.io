@@ -200,6 +200,11 @@ server {
 docker start nginx-web
 ```
 
+nginx 重启命令
+```shell
+docker exec -it nginx service nginx reload
+```
+
 ## 把打包后进行部署
 
 1. 首先在 jenkins 首页配置下publish over ssh的ssh连接配置。
