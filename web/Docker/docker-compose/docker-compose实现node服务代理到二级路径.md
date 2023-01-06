@@ -52,3 +52,7 @@ services:
 说明：
 我们的 node 服务是运行在 3000 端口的，在 80 端口是我们的前端页面，同时添加代理的配置
 
+demo完整代码
+
+https://github.com/fh332393900/docker-compose-node
+
