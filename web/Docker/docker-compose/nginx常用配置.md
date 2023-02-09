@@ -1,6 +1,6 @@
 ---
-slug: /
-sidebar_position: 1
+id: Nginx 常用配置
+sidebar_position: 2
 title: Nginx 常用配置
 data: 2023年2月09日
 ---

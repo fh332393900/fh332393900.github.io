@@ -1,5 +1,5 @@
 ---
-slug: /
+id: docker-compose实现node服务代理到二级路径
 sidebar_position: 1
 title: docker-compose实现node服务代理到二级路径
 data: 2023年1月06日
