@@ -106,6 +106,19 @@ const config = {
         breadcrumbs: false,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "webRTC",
+        path: "web/webRTC",
+        routeBasePath: "webRTC",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
   ],
 
   themeConfig:
@@ -133,6 +146,9 @@ const config = {
             }, {
               label: 'Docker',
               to: '/Docker'
+            }, {
+              label: 'webRTC',
+              to: '/webRTC'
             }]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
