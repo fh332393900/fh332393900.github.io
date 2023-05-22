@@ -109,6 +109,19 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "ThreeJs",
+        path: "web/ThreeJs",
+        routeBasePath: "ThreeJs",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "webRTC",
         path: "web/webRTC",
         routeBasePath: "webRTC",
@@ -146,6 +159,9 @@ const config = {
             }, {
               label: 'Docker',
               to: '/Docker'
+            }, {
+              label: 'ThreeJs',
+              to: '/ThreeJs'
             }, {
               label: 'webRTC',
               to: '/webRTC'
